@@ -1,0 +1,38 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: .5rem solid $color-accent;
+    .avatar{
+        border-radius: 100%;
+        width: 15rem;
+        height: 15rem;
+        border: .5rem solid $color-primary;
+        background: url('/img/faris.png');
+        background-position: center;
+        background-size: cover;
+        transition: 1s filter;
+        &:hover{
+            filter: blur(3px);
+        }
+    }
+    .links{
+        padding: 5rem 0;
+        width: 100%;
+        .link{
+            letter-spacing: .1rem;
+            display: block;
+            text-decoration: none;
+            font-size: 2.6rem;
+            padding: 2rem;
+            width: 100%;
+            color: $color-light;
+            transition: 1s background;
+            text-align: center;
+            &:hover{
+                background: $color-primary;
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.container{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    .nav{
+        flex-basis: 30%;
+        padding: 7rem 0;
+        background: $color-primary-dark;
+    }
+    .content{
+        flex-basis: 70%;
+        padding: 7rem;
+        color: $color-primary-dark;
+        background: $color-light;
+    }
+}
