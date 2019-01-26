@@ -2,18 +2,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: .5rem solid $color-accent;
+    border-right: .7rem solid $color-dark-2;
+    // border-right: .5rem solid $color-accent;
     .avatar{
         border-radius: 100%;
         width: 15rem;
         height: 15rem;
-        border: .5rem solid $color-primary;
+        border: .7rem solid $color-dark-2;
+        // border: 1rem solid $color-dark-2;
         background: url('/img/faris.png');
         background-position: center;
         background-size: cover;
-        transition: 1s filter;
+        filter: grayscale(100%);
         &:hover{
-            filter: blur(3px);
+            transition: 1s filter;
+            filter: grayscale(0%);
         }
     }
     .links{
@@ -23,14 +26,14 @@
             letter-spacing: .1rem;
             display: block;
             text-decoration: none;
-            font-size: 2.6rem;
+            font-size: 2.4rem;
             padding: 2rem;
             width: 100%;
-            color: $color-light;
+            color: $color-light-1;
             transition: 1s background;
             text-align: center;
             &:hover{
-                background: $color-primary;
+                background: $color-dark-2;
                 color: white;
             }
         }
