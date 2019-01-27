@@ -3,16 +3,15 @@
     flex-direction: column;
     align-items: center;
     border-right: .7rem solid $color-dark-2;
-    // border-right: .5rem solid $color-accent;
     .avatar{
         border-radius: 100%;
         width: 15rem;
         height: 15rem;
         border: .7rem solid $color-dark-2;
-        // border: 1rem solid $color-dark-2;
         background: url('/img/faris.png');
         background-position: center;
         background-size: cover;
+        transform: rotate(-10deg);
         filter: grayscale(100%);
         &:hover{
             transition: 1s filter;
