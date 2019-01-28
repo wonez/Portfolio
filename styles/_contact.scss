@@ -1,9 +1,16 @@
 .contact{
     font-size: 2.2rem;
+    @media only screen and (max-width: 1600px){
+        font-size: 2rem;
+    }
     justify-content: space-between;
     .form{
         display: block;
         flex-basis: 45%;
+        @media only screen and (max-width: 1600px){
+            flex-basis: 50%;
+            padding-right: 2rem;
+        }
         input, textarea{
             outline: none;
             font-size: inherit;
@@ -13,6 +20,7 @@
             display: block;
             border-bottom: 1px solid $color-light-2;
             width: 100%;
+            background: transparent;
             &:focus{
                 border-color: $color-dark-1;
             }
@@ -40,8 +48,15 @@
         flex-direction: column;
         color: $color-dark-2;
         flex-basis: 45%;
+        @media only screen and (max-width: 1600px){
+            flex-basis: 50%;
+            padding-left: 2rem;
+        }
         p{
             line-height: 2.2;
+            @media only screen and (max-width: 1600px){
+                line-height: 2;
+            }
         }
     }
     .icons{
