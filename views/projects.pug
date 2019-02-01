@@ -1,4 +1,29 @@
 extends layout.pug
 
 block content
-    h1 projects
+    .projects
+        .items
+            .item#item1
+                .image
+                .description
+                    h2 Dulce
+                    p React Redux social media application for sharing sweet recepies. Includes features such as creating and commenting on posts, following other users or chating with them. Backend was implemented using NodeJS, Express and MondoDB.
+                    .links
+                        a(href="https://github.com/wonez/Dulce" target="_blank") &lt;&#47;&gt;
+                        a(href="https://dulce-app.herokuapp.com/" target="_blank") www.
+            .item#item2
+                .description
+                    h2 Burger King
+                    p React Redux Burger Creator application with firebase database. Use buttons More and Less to increase or decrease amount of ingredients Cheese, Meat, Letuce, Tomato. Create an account to see your orders or create new ones by filling in required information and submiting an order.
+                    .links
+                            a(href="https://github.com/wonez/BurgerKing" target="_blank") &lt;&#47;&gt;
+                            a(href="https://burgerkiing.herokuapp.com/" target="_blank") www.
+                .image
+            .item#item3
+                .image
+                .description
+                    h2 Awesome Places
+                    p React Native Redux application uses firebase cloud functions as backend. Sing up to share a place it's location and relevant photo. See places shared by other users and for unwated photos and places feel free to delete them.
+                    .links
+                        a(href="https://github.com/wonez/AwesomePlaces" target="_blank") &lt;&#47;&gt;
+        .stripe

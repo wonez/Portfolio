@@ -7,7 +7,26 @@
     font-weight: lighter;
     @media only screen and (max-width: 1600px){
         font-size: 2.2rem;
+    }
+    @media only screen and (max-width: 1120px){
+        font-size: 1.5rem;
     } 
+    .items{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        @media only screen and (max-width: 1120px){
+            width: auto;
+            flex-direction: row;
+            align-items: center;
+            position: static;
+            transform: translateY(0%);
+        } 
+    }
     .avatar{
         border-radius: 100%;
         width: 15rem;
@@ -22,10 +41,17 @@
             transition: 1s filter;
             filter: grayscale(0%);
         }
+        @media only screen and (max-width: 1120px){
+            display: none;
+        } 
     }
     .links{
         padding: 5rem 0;
         width: 100%;
+        @media only screen and (max-width: 1120px){
+            display: flex;
+            padding: 0;
+        } 
         .link{
             letter-spacing: .1rem;
             display: block;
@@ -37,9 +63,13 @@
             transition: 1s background;
             text-align: center;
             &:hover{
-                background: $color-dark-2;
-                color: white;
+                background: $color-white;
+                color: $color-dark-2;
             }
+        }
+        .active{
+            background: $color-dark-2;
+            color: white;
         }
     }
 }

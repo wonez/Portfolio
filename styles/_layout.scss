@@ -2,6 +2,9 @@
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
+    @media only screen and (max-width: 1120px){
+        flex-direction: column;
+    } 
     .nav{
         flex-basis: 25%;
         display: flex;
@@ -12,6 +15,9 @@
     .content{
         flex-basis: 75%;
         padding: 0 4rem;
+        @media only screen and (max-width: 1120px){
+            padding: 0;
+        } 
         color: $color-dark-1;
         background: $color-light-1;
         display: flex;
@@ -25,8 +31,13 @@
         font-weight: bold;
         text-align: center;
         margin-bottom: 7rem;
+        width: 100%;
         @media only screen and (max-width: 1600px){
             margin-bottom: 3rem;
+        } 
+        @media only screen and (max-width: 1120px){
+            margin: 2rem 0;
+            font-size: 3rem;
         } 
         &:hover{
             cursor: default;

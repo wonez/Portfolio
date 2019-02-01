@@ -3,7 +3,7 @@ extends layout.pug
 block content
     h1.header Contact Me
     .contact
-        form.form
+        form.form(action='/form' method="post")
             input(type="text", name="name" placeholder="Don Joe")
             input(type="email", name="email" placeholder="example@mail.com")
             textarea(name="message", cols="30", rows="8" placeholder="Your message here...")
@@ -17,3 +17,8 @@ block content
                     img(src="/img/codepen.png")
                 a(href="mailto:ffazlic@yahoo.com" target="_blank")
                     img(src="/img/mail.png")
+    if redirect
+        script.
+            setTimeout(() => window.location.pathname = '/', 1500);
+        .thankYou 
+            .msg Thank you for contacting me. I will get back to you soon.

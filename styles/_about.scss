@@ -7,12 +7,18 @@
         font-size: 2rem;
         line-height: 2;
     }
+    @media only screen and (max-width: 1120px){
+        flex-direction: column;
+    } 
     &:hover{
         cursor: default;
     }
     h1{
         font-size: 5rem;
         margin-bottom: 3rem;
+        @media only screen and (max-width: 1120px){
+            font-size: 3rem;
+        } 
     }
     .bio{
         text-align: center;
@@ -21,6 +27,9 @@
         @media only screen and (max-width: 1600px){
             flex-basis: 50%;
         }
+        @media only screen and (max-width: 1120px){
+            padding: 3rem 2rem;
+        } 
         p{
             color: $color-dark-2;
             font-size: inherit;
@@ -37,6 +46,13 @@
         @media only screen and (max-width: 1600px){
             flex-basis: 50%;
         }
+        @media only screen and (max-width: 1120px){
+            background: $color-dark-1;
+            border: .7rem solid $color-dark-2;
+            border-right: none;
+            border-left: none;
+            padding: 3rem 0;
+        } 
         &::after{
             content: "";
             position: absolute;
@@ -48,6 +64,9 @@
                 width: calc(50% - 4rem);
                 left: 50%;
             }
+            @media only screen and (max-width: 1120px){
+                display: none;
+            } 
             top: 0;
             z-index: -1;
             right: 0;
@@ -59,6 +78,9 @@
         ul{
             list-style-type: none;
             column-count: 2;
+            @media only screen and (max-width: 1120px){
+                column-count: 1;
+            } 
         }
     }
 }
