@@ -9,7 +9,8 @@
     "compress:css": "node-sass public/css/styles.prefix.css public/css/styles.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "clear": "rm public/css/styles.comp.css && rm public/css/styles.prefix.css",
-    "start": "npm run build:css && npm run clear && node app.js"
+    "dev": "npm run build:css && npm run clear && node app.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
