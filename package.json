@@ -10,7 +10,7 @@
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "clear": "rm public/css/styles.comp.css && rm public/css/styles.prefix.css",
     "dev": "npm run build:css && npm run clear && node app.js",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
