@@ -107,13 +107,7 @@
             }
         }
     }
-    #item2{
-        .image{
-            background-image: url("/img/burgers.png");
-            @media only screen and (max-width: 1120px){
-                filter: grayscale(0%);
-            }
-        }
+    #item2, #item0{
         .description{
             clip-path: polygon(0 0%, 100% 0%, 90% 100%, 0% 100%);
             padding: 2rem;
@@ -134,6 +128,23 @@
         }
         a{
             padding: 0;
+        }
+    }
+    #item2{
+        .image{
+            background-image: url("/img/burgers.png");
+            @media only screen and (max-width: 1120px){
+                filter: grayscale(0%);
+            }
+        }
+    }
+    #item0{
+        .image{
+            margin-right: 20px;
+            background-image: url("/img/report.png");
+            @media only screen and (max-width: 1120px){
+                filter: grayscale(0%);
+            }
         }
     }
 }
